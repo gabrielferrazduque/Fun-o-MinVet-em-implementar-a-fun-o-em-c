@@ -46,9 +46,8 @@ int main() {
     }
 
     // Chamada da função
-    float menor = min_vet(v, n);
-    printf("\nO menor valor do vetor é: %.2f\n", menor);
-
+    float menor = min_vet(v, n); 
+      v = (float*) malloc(n*sizeof(float));    printf("\nO menor valor do vetor é: %.2f\n", menor);
     // Liberação da memória
     free(v);
 
