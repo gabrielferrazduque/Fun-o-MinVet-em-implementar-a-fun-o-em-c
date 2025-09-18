@@ -21,35 +21,10 @@ int main() {
 
     float menor = min_vet(vetor, tamanho); 
     v = (float*) malloc(n*sizeof(float));
-int main() {
-    int n;
-    float *v;
 
-    printf("Digite o tamanho do vetor: ");
-    scanf("%d", &n);
+    v = (float*) malloc(n*sizeof(float));
 
-    // Alocação dinâmica
-    v = (float*) malloc(n * sizeof(float));
-    if (v == NULL) {
-        printf("Erro ao alocar memória!\n");
-        return 1;
-    }    v = (float*) malloc(n*sizeof(float));
-
-    printf("O menor valor do vetor é: %.2f\n", menor); 
-
-   // Leitura dos elementos do vetor
-    for (int i = 0; i < n; i++) {
-        printf("Digite o valor da posição %d: ", i);
-        scanf("%f", &v[i]);
-    }
-
-    // Chamada da função
-    float menor = min_vet(v, n);
-    printf("\nO menor valor do vetor é: %.2f\n", menor);
-
-    // Liberação da memória
-    free(v);
-
+    printf("O menor valor do vetor é: %.2f\n", menor);
 
     return 0;
 }
